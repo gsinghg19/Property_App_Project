@@ -1,20 +1,22 @@
 import Head from "next/head";
 import { Box } from "@chakra-ui/react";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Layout = ({ children }) => (
     <>
         <Head>
             <title>Bluey-Bricks: a purple bricks inspired app.</title>
         </Head>
-        <Box maxWidth="1280px" m="auto">
+        <Box maxWidth="2000px" m="auto" bgColor='gray.200'>
             <header >
-                Navbar
+                <Navbar/>
             </header>
             <main>
                 {children}
             </main>
             <footer>
-                Footer
+                <Footer/>
             </footer>
         </Box>
     </>
